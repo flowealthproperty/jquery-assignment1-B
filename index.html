@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>jQuery Example</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      // Attach blur event handler to the textarea
+      $('textarea').blur(function() {
+        // Display a message when focus is removed
+        $('p').text('Focus removed from textarea');
+      });
+    });
+  </script>
+</head>
+<body >
+    <div style="display: flex; justify-content: center;align-items: center;">
+  <form style="padding: 50px;">
+    <fieldset style="padding: 50px;">
+      <textarea rows="4" cols="50">Hello, this is a test.</textarea>
+      <input type="button" value="Input Button">
+    </fieldset>
+  </form>
+</div>
+  <p></p>
+ <div style="display: flex; align-items: center;justify-content: center;">
+    <button id="button1">Click to see the effect</button>
+ </div>
+</body>
+</html>
